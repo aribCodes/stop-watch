@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#display_time{
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+}
+#display_time #hours,#mins,#secs{
+    font-size: 14vw;
+    width: 20vw;
+    /* background-color: yellow; */
+}
+#display_time #ms{
+    font-size: 8vw;
+    width: 12vw;
+    margin-left: 5vw;
+}
+#display_time p span{
+    font-size: 7vw;
+}
+hr{
+    border: 1px solid rgb(227, 227, 227);
+    width: 90%;
+}
+#buttons{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#buttons #start_btn,#stop_btn,#reset_btn{
+    padding: 9px 3vw 9px 3vw;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+#buttons #start_btn,#stop_btn{
+    background: #1e64c0;
+    color: white;
+    border: none;
+}
+#buttons #reset_btn{
+    background: white;
+    color: #1b5fb9;
+    border: 1px solid rgb(221, 221, 221);
+}
+#buttons #start_btn:hover,#stop_btn:hover{
+    background: #1855a5;
+}
+#buttons #reset_btn:hover{
+    background: rgb(242, 241, 241);
+    border: 1px solid rgb(242, 241, 241);
+}
